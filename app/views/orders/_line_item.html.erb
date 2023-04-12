@@ -1,0 +1,10 @@
+<tr>
+  <td><%= image_tag line_item.product.image.thumb.url %></td>
+  <td>
+    <h4><%= line_item.product.name %></h4>
+    <p><%= line_item.product.description %></p>
+  </td>
+  <td><%= humanized_money_with_symbol line_item.item_price %></td>
+  <td><%= line_item.quantity %></td>
+  <td><%= humanized_money_with_symbol line_item.total_price %></td>
+</tr>
