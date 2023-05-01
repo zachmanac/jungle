@@ -9,7 +9,8 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to '/register'
+      # if user with email exists already
+      redirect_to '/users/new'
     end
   end
 
